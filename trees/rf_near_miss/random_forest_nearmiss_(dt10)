@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="V15 <= -3.914\ngini = 0.5\nsamples = 512\nvalue = [397, 391]\nclass = No Fraud", fillcolor="#fffdfc"] ;
+1 [label="V19 <= 2.604\ngini = 0.335\nsamples = 258\nvalue = [84, 311]\nclass = Fraud", fillcolor="#6eb7ec"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Time <= -0.618\ngini = 0.224\nsamples = 234\nvalue = [45, 306]\nclass = Fraud", fillcolor="#56abe9"] ;
+1 -> 2 ;
+3 [label="gini = 0.462\nsamples = 54\nvalue = [29, 51]\nclass = Fraud", fillcolor="#aad5f4"] ;
+2 -> 3 ;
+4 [label="gini = 0.111\nsamples = 180\nvalue = [16, 255]\nclass = Fraud", fillcolor="#45a3e7"] ;
+2 -> 4 ;
+5 [label="V7 <= -1.621\ngini = 0.201\nsamples = 24\nvalue = [39, 5]\nclass = No Fraud", fillcolor="#e89152"] ;
+1 -> 5 ;
+6 [label="gini = 0.056\nsamples = 18\nvalue = [34, 1]\nclass = No Fraud", fillcolor="#e6853f"] ;
+5 -> 6 ;
+7 [label="gini = 0.494\nsamples = 6\nvalue = [5, 4]\nclass = No Fraud", fillcolor="#fae6d7"] ;
+5 -> 7 ;
+8 [label="V2 <= 0.181\ngini = 0.324\nsamples = 254\nvalue = [313, 80]\nclass = No Fraud", fillcolor="#eca16c"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="V20 <= 0.479\ngini = 0.254\nsamples = 194\nvalue = [256, 45]\nclass = No Fraud", fillcolor="#ea975c"] ;
+8 -> 9 ;
+10 [label="gini = 0.151\nsamples = 130\nvalue = [179, 16]\nclass = No Fraud", fillcolor="#e78c4b"] ;
+9 -> 10 ;
+11 [label="gini = 0.397\nsamples = 64\nvalue = [77, 29]\nclass = No Fraud", fillcolor="#efb084"] ;
+9 -> 11 ;
+12 [label="V28 <= 0.047\ngini = 0.471\nsamples = 60\nvalue = [57, 35]\nclass = No Fraud", fillcolor="#f5ceb3"] ;
+8 -> 12 ;
+13 [label="gini = 0.498\nsamples = 45\nvalue = [37, 33]\nclass = No Fraud", fillcolor="#fcf1ea"] ;
+12 -> 13 ;
+14 [label="gini = 0.165\nsamples = 15\nvalue = [20, 2]\nclass = No Fraud", fillcolor="#e88e4d"] ;
+12 -> 14 ;
+}
